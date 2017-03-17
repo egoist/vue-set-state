@@ -1,0 +1,53 @@
+{
+  "name": "vue-set-state",
+  "version": "0.0.0",
+  "description": "react all the thing?",
+  "repository": {
+    "url": "egoist/vue-set-state",
+    "type": "git"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test:cov": "jest --coverage && npm run lint",
+    "test": "jest && npm run lint && npm run build",
+    "lint": "xo",
+    "build": "bili --name index --compress --format umd"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "babelrc": false,
+    "env": {
+      "test": {
+        "presets": [
+          "es2015"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "bili": "^0.14.0",
+    "eslint-config-rem": "^3.0.0",
+    "jest-cli": "^18.1.0",
+    "vbuild": "^6.24.6",
+    "vue": "^2.2.4",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "extends": "rem",
+    "esnext": true,
+    "envs": [
+      "jest"
+    ],
+    "ignores": [
+      "example/**/*"
+    ]
+  }
+}
