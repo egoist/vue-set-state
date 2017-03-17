@@ -32,7 +32,7 @@ new Vue({
 
 ## API
 
-well, same to react's
+well, same as react's
 
 ## Contributing
 
