@@ -42,6 +42,15 @@ well, same to react's
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+## Development
+
+```bash
+# launch visual test
+yarn dev 
+
+# launch unit test
+yarn test
+```
 
 ## Author
 
