@@ -4,11 +4,12 @@ export default function (Vue) {
       obj(this.state, this.props) :
       obj
 
-    for (const key in newState) { // eslint-disable-line guard-for-in
-      this[key] = newState[key]
-    }
-
-    cb && this.$nextTick(cb)
+    this.$nextTick(() => {
+      for (const key in newState) { // eslint-disable-line guard-for-in
+        this[key] = newState[key]
+      }
+      cb && cb()
+    })
   }
 
   Object.defineProperties(Vue.prototype, {
