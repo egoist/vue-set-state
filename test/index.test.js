@@ -16,7 +16,7 @@ test('main', () => {
     vm.inc()
     expect(vm.state.count).toBe(0)
     vm.$nextTick(() => {
-      expect(vm.state.count).toBe(1),
+      expect(vm.state.count).toBe(1)
       resolve()
     })
   })
