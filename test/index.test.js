@@ -13,5 +13,7 @@ test('main', () => {
     }
   })
   vm.inc()
+  expect(vm.state.count).toBe(0)
+  vm._watchers.run()
   expect(vm.state.count).toBe(1)
 })
