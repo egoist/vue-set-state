@@ -4,7 +4,7 @@ export default function (Vue) {
       obj(this.state, this.props) :
       obj
 
-    rthis.$nextTick(() => {
+    return this.$nextTick(() => {
       for (const key in newState) { // eslint-disable-line guard-for-in
         this[key] = newState[key]
       }
